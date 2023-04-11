@@ -87,11 +87,9 @@ def pomodoro_timer(numberOfReps):
     print("\t##POMODORO TIMER##")
     print("25 minutes of work followed by")
     print("5 minutes of break")
-    # work_remaining = 25 * 60
-    # rest_remaining = 5 * 60
+    work_remaining = 25 * 60
+    rest_remaining = 5 * 60
 
-    work_remaining = 8
-    rest_remaining = 5
     print("Number of Pomodoros remaining: " + str(numberOfReps))
     while numberOfReps > 0:
         print("Time remaining until next REST")
