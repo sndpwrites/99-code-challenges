@@ -122,4 +122,63 @@ def apply_rot13(message):
 
 
 # pass the message. Same function can be called for both encryption and decryption
-print(apply_rot13("Uryyb NOPnop"))
+# print(apply_rot13("Uryyb NOPnop"))
+
+def heads_or_tails():
+    print("starting heads or tails game")
+    print("Type heads or tails")
+    user_choice = input("--")
+    possible_combo = ["HEADS", "TAILS"]
+    results = random.choice(possible_combo)
+    print(results)
+    if (user_choice.upper() == results):
+        print("You won!")
+    else:
+        print("You lost")
+
+
+# heads_or_tails()
+
+
+def rock_paper_scissor():
+    print("Starting rock paper scissor game")
+    gameEnded = False
+    print("0 for rock")
+    print("1 for paper")
+    print("2 for scissor")
+    while gameEnded == False:
+        user_choice = input("make a selection (0,1,2)\t")
+        computer_choice = random.randint(0, 2)
+        print("Computer selected\t" + str(computer_choice))
+        if (user_choice == computer_choice):
+            print("It's a draw. AGAIN!")
+            continue
+        if (user_choice == 0 and computer_choice == 2):
+            print("Winner: YOU")
+        else:
+            print("Winner: Computer")
+            break
+        if (user_choice == 1 and computer_choice == 1):
+            print("Winner: YOU")
+        else:
+            print("Winner: Computer")
+        if (user_choice == 2 and computer_choice == 1):
+            print("Winner: YOU")
+        else:
+            print("Winner: Computer")
+        if (computer_choice == 0 and user_choice == 2):
+            print("Winner: Computer")
+        else:
+            print("Winner: YOU")
+        if (computer_choice == 1 and user_choice == 1):
+            print("Winner: Computer")
+        else:
+            print("Winner: YOU")
+        if (computer_choice == 2 and user_choice == 1):
+            print("Winner: Computer")
+        else:
+            print("Winner: YOU")
+        gameEnded = True
+
+
+# rock_paper_scissor()
