@@ -19,7 +19,7 @@ repo for 99 code challenges. Work in progress
 12: Connect Four <br />
 13: Password Generator DONE <br />
 14: Rot13 Cipher DONE <br />
-15: Rock Paper Scissors <br />
+15: Rock Paper Scissors DONE <br />
 16: Dump File as Hex DONE <br />
 17: Fantasy Name Generator <br />
 18: RSS Feed Aggregator <br />
