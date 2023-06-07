@@ -153,6 +153,7 @@ def rock_paper_scissor():
     outcome_pair = (user_choice, computer_choice)
     if (user_choice == computer_choice):
         print("It's a draw. Try AGAIN!")
+        rock_paper_scissor()
     if (outcome_pair in user_wins):
         print("Winner: YOU")
     if (outcome_pair in computer_wins):
