@@ -40,7 +40,7 @@ repo for 99 code challenges. Work in progress
 33: Supermarket Line Simulator <br />
 34: Monty Hall Simulation <br />
 35: 0-1 Knapsack Problem <br />
-36: Simple Temperature Control <br />
+36: Simple Temperature Control DONE<br />
 37: Pig Latin Translator DONE <br />
 38: Bookmark Manager <br />
 39: Contact Manager <br />
