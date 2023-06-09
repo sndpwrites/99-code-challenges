@@ -186,6 +186,7 @@ def elevator_controller(current_floor):
         time.sleep(1)
         if (i == user_choice):
             print("You have arrived at your floor")
+            break
 
 
 elevator_controller(0)
