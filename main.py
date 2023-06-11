@@ -177,16 +177,3 @@ def simple_temperature_control(target_temperature):
 
 
 # simple_temperature_control(25)
-
-def elevator_controller(current_floor):
-    number_of_floors = range(-2, 10)
-    user_choice = int(input("Enter a floor number\t"))
-    for i in number_of_floors:
-        print("Currently at floor:\t"+str(i))
-        time.sleep(1)
-        if (i == user_choice):
-            print("You have arrived at your floor")
-            break
-
-
-elevator_controller(0)
