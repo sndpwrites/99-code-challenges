@@ -102,5 +102,5 @@ repo for 99 code challenges. Work in progress
 95: Pendulum Simulation <br />
 96: Screensaver <br />
 97: Battleship <br />
-98: Color Scheme Generator <br />
+98: Color Scheme Generator DONE<br />
 99: FizzBuzz <br />
