@@ -17,22 +17,6 @@ def func_rename(location, pattern, newName):
 # func_rename('C:\\Users\\Admin\\sheet\\','*.*','old %s')
 
 
-def func_file_to_hex(input_file, output_file):
-    with open(input_file, 'rb') as f:
-        content = f.read()
-    with open(output_file, 'w') as f:
-        f.write(binascii.hexlify(content).decode('utf-8'))
-
-
-def func_hex_to_file(input_file, output_file):
-    with open(input_file, 'rb') as f:
-        content = f.read()
-    with open(output_file, 'w') as f:
-        f.write(binascii.unhexlify(content).decode('utf-8'))
-# func_file_to_hex('C:\\Users\\Admin\\listOfCommands.txt','C:\\Users\\Admin\\listOfCommands.hex')
-# func_hex_to_file('C:\\Users\\Admin\\listOfCommands.hex','C:\\Users\\Admin\\listOfCommands1.txt')
-
-
 def func_password_generator(length):
     character_pool = string.ascii_letters + string.digits + string.punctuation
     output = ''.join(random.choice(character_pool) for i in range(length))
