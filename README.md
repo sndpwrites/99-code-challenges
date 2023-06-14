@@ -96,7 +96,7 @@ repo for 99 code challenges. Work in progress
 89: Conway's Game of Life <br />
 90: Yahtzee <br />
 91: Maze Generator <br />
-92: Task Scheduler <br />
+92: Task Scheduler DONE<br />
 93: Configurable Wordfilter <br />
 94: Pokémon-style Battle System <br />
 95: Pendulum Simulation <br />
