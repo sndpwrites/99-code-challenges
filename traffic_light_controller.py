@@ -3,15 +3,18 @@ import datetime
 
 
 class TrafficLight:
+    LIGHT_CHOICES = ['RED', 'YELLOW', 'GREEN']
+
     def __init__(self, duration):
         self.duration = duration
         self.current = 'RED'
 
     def display_board(self):
-        return ['RED', 'YELLOW', 'GREEN']
+        print(self.LIGHT_CHOICES)
+    # establishes a timer for each current light and display until timer expires
 
-    def get_current(self):
-        print(self.current)
+    def work_current(self):
+        print("Current display", self.current)
         remaining = self.duration
         while remaining >= 0:
             timer = datetime.timedelta(seconds=remaining)
@@ -19,6 +22,7 @@ class TrafficLight:
             time.sleep(1)
             remaining -= 1
         print("\n")
+    # switch between light. This function could be more elegant
 
     def get_next(self, current):
         if current == 'RED':
@@ -32,13 +36,14 @@ class TrafficLight:
         self.current = self.get_next(self.current)
 
     def start(self):
-        print("Currently showing:\t")
         while True:
-            self.get_current()
-            # time.sleep(self.duration)
+            self.work_current()
             self.change_current()
 
 
-obj = TrafficLight(3)
-print(obj.display_board())
+# pass light duration
+obj = TrafficLight(5)
+# display board
+obj.display_board()
+# start infinite light cycle
 obj.start()
