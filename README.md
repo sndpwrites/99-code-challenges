@@ -92,7 +92,7 @@ repo for 99 code challenges. Work in progress
 85: Fetch News Headlines <br />
 86: Calculate Digits of Pi DONE<br />
 87: Screenfetch Clone <br />
-88: Dice Roll Simulator <br />
+88: Dice Roll Simulator DONE<br />
 89: Conway's Game of Life <br />
 90: Yahtzee <br />
 91: Maze Generator <br />
