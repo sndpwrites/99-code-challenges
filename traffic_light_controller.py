@@ -11,9 +11,9 @@ class TrafficLight:
 
     def display_board(self):
         print(self.LIGHT_CHOICES)
-    # establishes a timer for each current light and display until timer expires
 
     def work_current(self):
+        # establishes a timer for each current light and display until timer expires
         print("Current display", self.current)
         remaining = self.duration
         while remaining >= 0:
@@ -22,9 +22,9 @@ class TrafficLight:
             time.sleep(1)
             remaining -= 1
         print("\n")
-    # switch between light. This function could be more elegant
 
     def get_next(self, current):
+        # switch between light. This function could be more elegant
         if current == 'RED':
             return 'YELLOW'
         if current == 'YELLOW':
@@ -41,8 +41,9 @@ class TrafficLight:
             self.change_current()
 
 
+dur = input("Enter duration of each light in seconds\t")
 # pass light duration
-obj = TrafficLight(5)
+obj = TrafficLight(int(dur))
 # display board
 obj.display_board()
 # start infinite light cycle

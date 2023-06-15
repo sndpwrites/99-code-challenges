@@ -34,7 +34,7 @@ repo for 99 code challenges. Work in progress
 27: Markov Chain Text Generator <br />
 28: 1D Cellular Automata <br />
 29: Elevator Controller <br />
-30: Traffic Light Controller <br />
+30: Traffic Light Controller DONE<br />
 31: Finite State Machine <br />
 32: Image Noise Remover <br />
 33: Supermarket Line Simulator <br />
