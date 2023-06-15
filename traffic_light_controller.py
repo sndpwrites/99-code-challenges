@@ -1,4 +1,5 @@
 import time
+import datetime
 
 
 class TrafficLight:
@@ -10,7 +11,14 @@ class TrafficLight:
         return ['RED', 'YELLOW', 'GREEN']
 
     def get_current(self):
-        print(self.current, end='\r')
+        print(self.current)
+        remaining = self.duration
+        while remaining >= 0:
+            timer = datetime.timedelta(seconds=remaining)
+            print(timer, end="\r")
+            time.sleep(1)
+            remaining -= 1
+        print("\n")
 
     def get_next(self, current):
         if current == 'RED':
@@ -27,7 +35,7 @@ class TrafficLight:
         print("Currently showing:\t")
         while True:
             self.get_current()
-            time.sleep(self.duration)
+            # time.sleep(self.duration)
             self.change_current()
 
 
