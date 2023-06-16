@@ -65,13 +65,3 @@ def func_piglatin_to_english(sentence):
 def func_calculate_pi_digits(digits):
     for i in range(digits):
         return 22/7
-
-
-def apply_rot13(message):
-    mapping = str.maketrans('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
-                            'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm')
-    return message.translate(mapping)
-
-
-# pass the message. Same function can be called for both encryption and decryption
-# print(apply_rot13("Uryyb NOPnop"))
