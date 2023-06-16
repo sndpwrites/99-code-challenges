@@ -75,18 +75,3 @@ def apply_rot13(message):
 
 # pass the message. Same function can be called for both encryption and decryption
 # print(apply_rot13("Uryyb NOPnop"))
-
-def heads_or_tails():
-    print("starting heads or tails game")
-    print("Type heads or tails")
-    user_choice = input("--")
-    possible_combo = ["HEADS", "TAILS"]
-    results = random.choice(possible_combo)
-    print(results)
-    if (user_choice.upper() == results):
-        print("You won!")
-    else:
-        print("You lost")
-
-
-# heads_or_tails()
