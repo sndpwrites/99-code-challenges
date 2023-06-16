@@ -24,44 +24,6 @@ def func_password_generator(length):
 # print(func_password_generator(16))
 
 
-def func_vowel_checker(word):
-    vowels = "aeiouAEIOU"
-    output = word
-    moved_chars = ''
-    for character in word:
-        if character not in vowels:
-            moved_chars += character
-            output = output[1:]
-        else:
-            break
-    return (output + moved_chars + "ay ")
-
-
-def func_english_to_piglatin(sentence):
-    vowels = "aeiouAEIOU"
-    output = ""
-    print("original : " + sentence)
-    for word in sentence.split():
-        if word[0] in vowels:
-            output += word + "yay "
-        else:
-            output += func_vowel_checker(word)
-    return output
-# print(func_english_to_piglatin("Hell you have a nice house"))
-
-
-def func_piglatin_to_english(sentence):
-    output = ""
-    print("pig latin : " + sentence)
-    for word in sentence.split():
-        if word[-3:] == 'yay':
-            output += word[:-3] + " "
-        else:
-            output += word[-3:-2] + word[:-3] + " "
-    return output
-# print(func_piglatin_to_english("ellHay ouyay avehay ayay icenay ousehay"))
-
-
 def func_calculate_pi_digits(digits):
     for i in range(digits):
         return 22/7
