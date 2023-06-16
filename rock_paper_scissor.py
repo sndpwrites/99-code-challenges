@@ -1,3 +1,6 @@
+import random
+
+
 def rock_paper_scissor():
     print("Starting rock paper scissor game")
     user_wins = [(0, 2), (1, 0), (2, 1)]
