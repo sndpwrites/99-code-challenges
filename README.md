@@ -85,7 +85,7 @@ repo for 99 code challenges. Work in progress
 77: Memory Game <br />
 78: Prime Factorizer <br />
 79: Linewise Text Editor (ed) <br />
-80: Credit Card Number Validator <br />
+80: Credit Card Number Validator DONE<br />
 81: CSV Query Tool <br />
 82: Snippet Manager <br />
 83: Small Lisp-inspired Language <br />
