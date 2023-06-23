@@ -50,7 +50,7 @@ repo for 99 code challenges. Work in progress
 43: Unicode Symbol Picker <br />
 44: Regex Visualizer <br />
 45: Morse Code Translator <br />
-46: Visual Clock <br />
+46: Visual Clock DONE<br />
 47: JSON Colorizer <br />
 48: Daily Calories Calculator <br />
 49: Gallery Downloader (any site) <br />

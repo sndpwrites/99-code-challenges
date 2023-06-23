@@ -16,10 +16,15 @@ function displayClock() {
   }
 
   var timeString = hours + ":" + minutes + ":" + seconds;
-  //   document.getElementById("clock").textContent = timeString;
+
+  document.getElementById("clock").textContent = timeString;
+}
+
+function displayDate() {
   var date = new Date().toDateString();
-  document.getElementById("clock").textContent = `${timeString}\n${date}`;
+  document.getElementById("date").textContent = date;
 }
 
 // Call the displayClock function every second
 setInterval(displayClock, 1000);
+setInterval(displayDate, 5000);
