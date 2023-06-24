@@ -22,6 +22,7 @@ README.md file could be better. Work in progress
 92: Task Scheduler DONE<br />
 98: Color Scheme Generator DONE<br />
 99: FizzBuzz <br />
+19: Idle Game <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -38,7 +39,6 @@ README.md file could be better. Work in progress
 12: Connect Four <br />
 17: Fantasy Name Generator <br />
 18: RSS Feed Aggregator <br />
-19: Idle Game <br />
 20: File Tagging System <br />
 21: Bowling Score Calculator <br />
 22: Insult Generator <br />
