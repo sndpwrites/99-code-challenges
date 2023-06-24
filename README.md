@@ -21,6 +21,7 @@ README.md file could be better. Work in progress
 88: Dice Roll Simulator DONE<br />
 92: Task Scheduler DONE<br />
 98: Color Scheme Generator DONE<br />
+99: FizzBuzz <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -107,7 +108,6 @@ README.md file could be better. Work in progress
 95: Pendulum Simulation <br />
 96: Screensaver <br />
 97: Battleship <br />
-99: FizzBuzz <br />
 
 # 99 challenges list
 
