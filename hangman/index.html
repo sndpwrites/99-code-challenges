@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman game</title>
+  <style>
+  </style>
+  <script src="hangman.js"></script>
+</head>
+<body>
+   <b>
+       <p>Guess letter here</p>
+   </b>
+    <input id="inputLetter"></input>
+    <b>
+        <p>Revealed word</p>
+    </b>
+    <h1>
+        <div id="word"></div>
+        
+    </h1>
+    <b>
+        <p>Attempts remaining</p>
+        <div id="actualWord"></div>
+    </b>
+  <div id="retryLimit"></div>
+  <br />
+  <button id="btn-start" onclick="handleStart()">Start Game</button>
+  <button id="btn-guess" onclick="handleGuess()">Guess</button>
+</body>
+</html>
