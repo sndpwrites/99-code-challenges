@@ -25,9 +25,17 @@ function handleGuess() {
 
 function onErrorGuessed() {
   remaining = Number(document.getElementById("retryLimit").textContent);
+  if (remaining <= 0) {
+    alert("Game over. Man is hung");
+    document.getElementById("btn-guess").hidden = true;
+    document.getElementById("word").textContent =
+      document.getElementById("actualWord").textContent;
+    return;
+  }
   remaining -= 1;
   document.getElementById("retryLimit").textContent = remaining;
 }
+
 function getValueAndClearTextBox(id) {
   var value = document.getElementById(id).value;
   document.getElementById(id).value = "";
@@ -93,6 +101,7 @@ function hideWord(data) {
 }
 function handleStart() {
   getRandomWord();
+  document.getElementById("btn-guess").hidden = false;
   document.getElementById("retryLimit").textContent = 6;
 }
 
