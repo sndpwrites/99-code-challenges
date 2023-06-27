@@ -58,24 +58,22 @@ function getRandomString(strings) {
 }
 
 function getRandomWord() {
-  fetch("https://random-word-api.herokuapp.com/word")
+  fetch("https://random-word-api.herokuapp.com/word?lang=en")
     .then((response) => {
-      // Check if the response is successful
       if (response.ok) {
-        // Parse the response data as JSON
         return response.json();
       } else {
         throw new Error("Request failed.");
       }
     })
     .then((data) => {
-      // Process the JSON data
       randomWord = data[0];
-      console.log(randomWord);
       document.getElementById("actualWord").textContent = randomWord;
       document.getElementById("actualWord").hidden = true;
       document.getElementById("word").textContent = hideWord(randomWord);
-      console.log(data);
+      document.getElementById(
+        "wordLength"
+      ).textContent = `${randomWord.length} letters`;
     })
     .catch((error) => {
       // Handle any errors
@@ -96,4 +94,25 @@ function hideWord(data) {
 function handleStart() {
   getRandomWord();
   document.getElementById("retryLimit").textContent = 6;
+}
+
+function handleMeaning() {
+  word = document.getElementById("actualWord").textContent;
+  fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Request failed.");
+      }
+    })
+    .then((data) => {
+      hints = data[0].meanings[0].definitions
+        .map((obj) => obj.definition)
+        .join("\t ");
+      document.getElementById("hint-area").textContent = hints;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
