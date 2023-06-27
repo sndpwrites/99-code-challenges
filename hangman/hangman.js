@@ -14,14 +14,20 @@ function handleGuess() {
         );
         document.getElementById("word").textContent = updatedHiddenWord;
       });
+      if (document.getElementById("word").textContent === actualWord) {
+        alert("Congratulations! You've won!");
+      }
     } else {
-      remaining = Number(document.getElementById("retryLimit").textContent);
-      remaining -= 1;
-      document.getElementById("retryLimit").textContent = remaining;
+      onErrorGuessed();
     }
   }
 }
 
+function onErrorGuessed() {
+  remaining = Number(document.getElementById("retryLimit").textContent);
+  remaining -= 1;
+  document.getElementById("retryLimit").textContent = remaining;
+}
 function getValueAndClearTextBox(id) {
   var value = document.getElementById(id).value;
   document.getElementById(id).value = "";
@@ -65,6 +71,7 @@ function handleStart() {
   words = ["apple", "ball", "orange"];
   randomWord = getRandomString(words);
   document.getElementById("actualWord").textContent = randomWord;
+  document.getElementById("actualWord").hidden = true;
   document.getElementById("word").textContent = hideWord(randomWord);
   document.getElementById("retryLimit").textContent = 6;
 }
