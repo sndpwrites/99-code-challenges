@@ -1,20 +1,42 @@
 function handleGuess() {
-  var guessedLetter = document.getElementById("inputLetter").value;
-  if (guessedLetter.length < 1) return;
-  actualWord = document.getElementById("actualWord").textContent;
+  var guessedLetter = getValueAndClearTextBox("inputLetter");
 
-  position = actualWord.indexOf(guessedLetter);
-  if (position < 0) {
-    remaining = Number(document.getElementById("retryLimit").textContent);
-    remaining -= 1;
-    document.getElementById("retryLimit").textContent = remaining;
-  } else {
-    hiddenWord = document.getElementById("word").textContent;
-    updatedHiddenWord = replaceCharacterAt(hiddenWord, position, guessedLetter);
-    document.getElementById("word").textContent = updatedHiddenWord;
+  if (guessedLetter.length === 1) {
+    actualWord = document.getElementById("actualWord").textContent;
+    position = getMultipleIndexes(actualWord, guessedLetter);
+    if (position.length > 0) {
+      position.forEach((element) => {
+        hiddenWord = document.getElementById("word").textContent;
+        updatedHiddenWord = replaceCharacterAt(
+          hiddenWord,
+          element,
+          guessedLetter
+        );
+        document.getElementById("word").textContent = updatedHiddenWord;
+      });
+    } else {
+      remaining = Number(document.getElementById("retryLimit").textContent);
+      remaining -= 1;
+      document.getElementById("retryLimit").textContent = remaining;
+    }
   }
-  document.getElementById("inputLetter").value = "";
-  return 0;
+}
+
+function getValueAndClearTextBox(id) {
+  var value = document.getElementById(id).value;
+  document.getElementById(id).value = "";
+  return value;
+}
+
+function getMultipleIndexes(string, character) {
+  const regex = new RegExp(character, "g");
+  const indices = [];
+
+  let match;
+  while ((match = regex.exec(string)) !== null) {
+    indices.push(match.index);
+  }
+  return indices;
 }
 
 function replaceCharacterAt(str, index, newChar) {
