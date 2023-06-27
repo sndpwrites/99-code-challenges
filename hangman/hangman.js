@@ -57,6 +57,32 @@ function getRandomString(strings) {
   return strings[randomIndex];
 }
 
+function getRandomWord() {
+  fetch("https://random-word-api.herokuapp.com/word")
+    .then((response) => {
+      // Check if the response is successful
+      if (response.ok) {
+        // Parse the response data as JSON
+        return response.json();
+      } else {
+        throw new Error("Request failed.");
+      }
+    })
+    .then((data) => {
+      // Process the JSON data
+      randomWord = data[0];
+      console.log(randomWord);
+      document.getElementById("actualWord").textContent = randomWord;
+      document.getElementById("actualWord").hidden = true;
+      document.getElementById("word").textContent = hideWord(randomWord);
+      console.log(data);
+    })
+    .catch((error) => {
+      // Handle any errors
+      console.error(error);
+    });
+}
+
 function hideWord(data) {
   var numberOfHints = data.length - 4;
   var asteriskString = data
@@ -68,10 +94,6 @@ function hideWord(data) {
   return asteriskString;
 }
 function handleStart() {
-  words = ["apple", "ball", "orange"];
-  randomWord = getRandomString(words);
-  document.getElementById("actualWord").textContent = randomWord;
-  document.getElementById("actualWord").hidden = true;
-  document.getElementById("word").textContent = hideWord(randomWord);
+  getRandomWord();
   document.getElementById("retryLimit").textContent = 6;
 }
