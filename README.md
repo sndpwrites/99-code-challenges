@@ -23,6 +23,7 @@ README.md file could be better. Work in progress
 98: Color Scheme Generator DONE<br />
 99: FizzBuzz <br />
 19: Idle Game <br />
+74: Hangman <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -64,7 +65,6 @@ README.md file could be better. Work in progress
 47: JSON Colorizer <br />
 48: Daily Calories Calculator <br />
 49: Gallery Downloader (any site) <br />
-74: Hangman <br />
 50: Cowsay Clone <br />
 51: Calculator <br />
 52: Image Captioner <br />
