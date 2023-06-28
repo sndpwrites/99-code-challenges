@@ -39,6 +39,9 @@ function onErrorGuessed() {
 function getValueAndClearTextBox(id) {
   var value = document.getElementById(id).value;
   document.getElementById(id).value = "";
+  guessedHistory = document.getElementById("guessed-history").textContent;
+  guessedHistory = `${value}-${guessedHistory}`;
+  document.getElementById("guessed-history").textContent = guessedHistory;
   return value;
 }
 
@@ -99,9 +102,16 @@ function hideWord(data) {
     .join("");
   return asteriskString;
 }
+
 function handleStart() {
   getRandomWord();
+  clearScreen();
+}
+
+function clearScreen() {
   document.getElementById("btn-guess").hidden = false;
+  document.getElementById("hint-area").textContent = "";
+  document.getElementById("guessed-history").textContent = "";
   document.getElementById("retryLimit").textContent = 6;
 }
 
