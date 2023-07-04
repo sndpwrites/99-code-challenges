@@ -24,11 +24,11 @@ README.md file could be better. Work in progress
 99: FizzBuzz <br />
 19: Idle Game <br />
 74: Hangman <br />
+00: Reddit Thread Downloader <br />
 <br />
 
 #### <b>REMAINING</b>
 
-00: Reddit Thread Downloader <br />
 01: Text-based Adventure Game <br />
 03: Simple Web Server <br />
 04: Brainfuck Interpreter <br />
