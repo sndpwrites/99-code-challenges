@@ -93,7 +93,6 @@ README.md file could be better. Work in progress
 75: Matrix Multiplier <br />
 76: Stock Price Fetcher <br />
 77: Memory Game <br />
-78: Prime Factorizer <br />
 79: Linewise Text Editor (ed) <br />
 81: CSV Query Tool <br />
 82: Snippet Manager <br />
@@ -108,6 +107,7 @@ README.md file could be better. Work in progress
 95: Pendulum Simulation <br />
 96: Screensaver <br />
 97: Battleship <br />
+78: Prime Factorizer <br />
 
 # 99 challenges list
 
