@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Configurable word filter</title>
+  <style>
+  </style>
+  <script src="filter.js"></script>
+</head>
+<body>
+<p>Enter word to filter</p>
+<input type="text" id="input-word"></input>
+<button id="btn-add-word" onclick="handleAddWord()">Add word</button>
+<p>Words to filter:</p>
+<h3 id="filter-words"></h3>
+<br/>
+<p>Enter or paste text content</p>
+<textarea id="raw-text"></textarea>
+<br/>
+<button onclick="applyFilter()">Apply filter</button>
+<br/>
+<p>
+<textarea id="filtered-text" readonly></textarea>
+</p>
+</body>
+</html>
