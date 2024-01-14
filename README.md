@@ -25,6 +25,7 @@ README.md file could be better. Work in progress
 19: Idle Game <br />
 74: Hangman <br />
 00: Reddit Thread Downloader <br />
+78: Prime Factorizer <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -107,7 +108,6 @@ README.md file could be better. Work in progress
 95: Pendulum Simulation <br />
 96: Screensaver <br />
 97: Battleship <br />
-78: Prime Factorizer <br />
 
 # 99 challenges list
 
