@@ -26,6 +26,7 @@ README.md file could be better. Work in progress
 74: Hangman <br />
 00: Reddit Thread Downloader <br />
 78: Prime Factorizer <br />
+93: Configurable Wordfilter <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -103,7 +104,6 @@ README.md file could be better. Work in progress
 89: Conway's Game of Life <br />
 90: Yahtzee <br />
 91: Maze Generator <br />
-93: Configurable Wordfilter <br />
 94: Pokémon-style Battle System <br />
 95: Pendulum Simulation <br />
 96: Screensaver <br />
