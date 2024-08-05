@@ -1,17 +1,11 @@
 import random
 
-
-def get_random_dice_value():
-    return random.randint(1, 6)
-
-
-def roll_dice():
-    value = get_random_dice_value()
-    print(value)
-    if value in [1, 6]:
-        roll_dice()
+class Dice:
+    def roll(self):
+        return random.randint(1, 7)
 
 
-no_of_dices = int(input("Number of dices to roll at once:\t"))
+no_of_dices = int(input("How many rolls?:\t"))
+dice = Dice()
 for i in range(no_of_dices):
-    roll_dice()
+    print(f"Roll#{i+1}\t{dice.roll()}")
