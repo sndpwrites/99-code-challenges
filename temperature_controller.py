@@ -1,21 +1,25 @@
-import random
-
 # recursion based temperature control
+import random
+import time
 
-# provide target temperature as argument
+# global min and max values
+temp_low = 16
+temp_high = 32
+
+def simple_temperature_control(target):
+    from_sensor = random.randint(temp_low, temp_high)   #replace with sensor reading
+    print(f"Current reading:\t{from_sensor}")
+    time.sleep(1)   #wait x time before checking
+    if from_sensor < target:
+        print("Target not met. Increasing heater power")
+        simple_temperature_control(target)
+    if from_sensor > target:
+        print("Target exceeded. Increasing cooler power")
+        simple_temperature_control(target)
+    if from_sensor == target:
+        print("Target met. All components turned off")
 
 
-def simple_temperature_control(target_temperature):
-    input_temperature = random.randint(0, 35)
-    print("Current temperature:\t" + str(input_temperature))
-    if input_temperature < target_temperature:
-        print("Target not reached. Starting heater")
-        simple_temperature_control(target_temperature)
-    if input_temperature > target_temperature:
-        print("Target exceeded. Starting cooler")
-        simple_temperature_control(target_temperature)
-    if input_temperature == target_temperature:
-        print("Target reached.")
-
-
-simple_temperature_control(25)
+set_temp = 26   #replace to user input
+print(f"User set temperature at\t{set_temp}")
+simple_temperature_control(set_temp)
