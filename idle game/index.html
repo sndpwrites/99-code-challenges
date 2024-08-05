@@ -2,26 +2,32 @@
 <html>
 <head>
   <title>Idle game</title>
-  <style>
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <script src="idle.js"></script>
 </head>
 <body>
-   <b>
-       <p>Mining rate</p>
-   </b>
-    <div id="rate"></div>
-    <b>
-        <p>Total mined</p>
-    </b>
-    <h1>
+  <div class="game-container">
+    <h1>Idle Mining Game</h1>
+    
+    <div class="stat">
+        <span class="stat-label">Mining rate:</span>
+        <div id="rate"></div>
+    </div>
+    
+    <div class="stat">
+        <span class="stat-label">Total mined:</span>
         <div id="wealth"></div>
-    </h1>
-    <b>
-        <p>Cost to Upgrade</p>
-    </b>
-  <div id="cost"></div>
-  <br />
-  <button id="btn-upgrade" onclick="handleUpgrade()">Upgrade</button>
+    </div>
+    
+    <div class="stat">
+        <span class="stat-label">Cost to Upgrade:</span>
+        <div id="cost"></div>
+    </div>
+    
+    <button onclick="handleUpgrade()">Upgrade</button>
+  </div>
 </body>
 </html>
+
+
