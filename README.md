@@ -27,6 +27,7 @@ README.md file could be better. Work in progress
 00: Reddit Thread Downloader <br />
 78: Prime Factorizer <br />
 93: Configurable Wordfilter <br />
+62: Binary Search <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -80,7 +81,6 @@ README.md file could be better. Work in progress
 84: Reaction Time Tester <br />
 60: Making Change (Currency) <br />
 61: Download Manager <br />
-62: Binary Search <br />
 63: Towers of Hanoi <br />
 64: Rigid Body Physics Sim <br />
 65: Simon <br />
