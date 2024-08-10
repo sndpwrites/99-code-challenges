@@ -1,3 +1,13 @@
+// Execute a function when the user presses a key on the keyboard
+document.getElementById("inputLetter").addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("btn-guess").click();
+  }
+});
 function handleGuess() {
   var guessedLetter = getValueAndClearTextBox("inputLetter");
 
@@ -16,18 +26,22 @@ function handleGuess() {
       });
       if (document.getElementById("word").textContent === actualWord) {
         alert("Congratulations! You've won!");
+        document.getElementById("btn-guess").disabled = true;
+        document.getElementById("inputLetter").disabled = true;
       }
     } else {
       onErrorGuessed();
     }
   }
+  document.getElementById("inputLetter").focus()
 }
 
 function onErrorGuessed() {
   remaining = Number(document.getElementById("retryLimit").textContent);
   if (remaining <= 0) {
     alert("Game over. Man is hung");
-    document.getElementById("btn-guess").hidden = true;
+    document.getElementById("btn-guess").disabled = true;
+    document.getElementById("inputLetter").disabled = true;
     document.getElementById("word").textContent =
       document.getElementById("actualWord").textContent;
     return;
@@ -109,7 +123,8 @@ function handleStart() {
 }
 
 function clearScreen() {
-  document.getElementById("btn-guess").hidden = false;
+  document.getElementById("btn-guess").disabled = false;
+  document.getElementById("inputLetter").disabled = false;
   document.getElementById("hint-area").textContent = "";
   document.getElementById("guessed-history").textContent = "";
   document.getElementById("retryLimit").textContent = 6;
