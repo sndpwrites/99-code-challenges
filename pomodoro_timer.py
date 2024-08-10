@@ -9,7 +9,7 @@ def pomodoro_timer(numberOfReps):
     work_remaining = 25 * 60
     rest_remaining = 5 * 60
 
-    print("Number of Pomodoros remaining: " + str(numberOfReps))
+    print(f"Number of Pomodoros remaining: {numberOfReps}")
     while numberOfReps > 0:
         print("Time remaining until next REST")
         while work_remaining > 0:
