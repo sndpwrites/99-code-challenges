@@ -124,10 +124,12 @@ function handleStart() {
 
 function clearScreen() {
   document.getElementById("btn-guess").disabled = false;
+  document.getElementById("btnShowMeaning").disabled = false;
   document.getElementById("inputLetter").disabled = false;
   document.getElementById("hint-area").textContent = "";
   document.getElementById("guessed-history").textContent = "";
   document.getElementById("retryLimit").textContent = 6;
+  document.getElementById("inputLetter").focus();
 }
 
 function handleMeaning() {
@@ -145,8 +147,11 @@ function handleMeaning() {
         .map((obj) => obj.definition)
         .join("\t ");
       document.getElementById("hint-area").textContent = hints;
+      document.getElementById("inputLetter").focus();
+      document.getElementById("btnShowMeaning").disabled = true;
     })
     .catch((error) => {
       console.error(error);
+      document.getElementById("hint-area").textContent = error;
     });
 }
