@@ -28,6 +28,7 @@ README.md file could be better. Work in progress
 78: Prime Factorizer <br />
 93: Configurable Wordfilter <br />
 62: Binary Search <br />
+31: Finite State Machine <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -52,7 +53,6 @@ README.md file could be better. Work in progress
 26: Maze Solver <br />
 27: Markov Chain Text Generator <br />
 28: 1D Cellular Automata <br />
-31: Finite State Machine <br />
 32: Image Noise Remover <br />
 33: Supermarket Line Simulator <br />
 34: Monty Hall Simulation <br />
