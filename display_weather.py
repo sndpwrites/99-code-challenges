@@ -11,7 +11,7 @@ def get_weather(city, api_key):
         'q': city,
         'appid': api_key,
         'units': 'metric'  # Use 'imperial' for Fahrenheit
-    }
+    }e
     
     try:
         response = requests.get(base_url, params=params)

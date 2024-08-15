@@ -29,6 +29,7 @@ README.md file could be better. Work in progress
 93: Configurable Wordfilter <br />
 62: Binary Search <br />
 31: Finite State Machine <br />
+42: Display Current Weather <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -61,7 +62,6 @@ README.md file could be better. Work in progress
 39: Contact Manager <br />
 40: Basic Markdown to HTML <br />
 41: Port Scanner <br />
-42: Display Current Weather <br />
 43: Unicode Symbol Picker <br />
 44: Regex Visualizer <br />
 45: Morse Code Translator <br />
