@@ -30,6 +30,7 @@ README.md file could be better. Work in progress
 62: Binary Search <br />
 31: Finite State Machine <br />
 42: Display Current Weather <br />
+90: Yahtzee <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -102,7 +103,6 @@ README.md file could be better. Work in progress
 85: Fetch News Headlines <br />
 87: Screenfetch Clone <br />
 89: Conway's Game of Life <br />
-90: Yahtzee <br />
 91: Maze Generator <br />
 94: Pokémon-style Battle System <br />
 95: Pendulum Simulation <br />
