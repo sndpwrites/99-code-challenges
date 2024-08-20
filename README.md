@@ -31,6 +31,7 @@ README.md file could be better. Work in progress
 31: Finite State Machine <br />
 42: Display Current Weather <br />
 90: Yahtzee <br />
+21: Bowling Score Calculator <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -47,7 +48,6 @@ README.md file could be better. Work in progress
 17: Fantasy Name Generator <br />
 18: RSS Feed Aggregator <br />
 20: File Tagging System <br />
-21: Bowling Score Calculator <br />
 22: Insult Generator <br />
 23: Dining Philosophers Problem <br />
 24: Recipe Website Extractor <br />
