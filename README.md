@@ -33,6 +33,7 @@ README.md file could be better. Work in progress
 90: Yahtzee <br />
 21: Bowling Score Calculator <br />
 09: Tic-Tac-Toe <br />
+70: CIDR Range Calculator <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -89,7 +90,6 @@ README.md file could be better. Work in progress
 67: Image Flip or Rotate <br />
 68: Tabular Data Visualizer <br />
 69: Visual Novel Engine <br />
-70: CIDR Range Calculator <br />
 71: Flashcards <br />
 72: Sine Wave Audio Generator <br />
 73: Mad-Libs <br />
