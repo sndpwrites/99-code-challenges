@@ -32,6 +32,7 @@ README.md file could be better. Work in progress
 42: Display Current Weather <br />
 90: Yahtzee <br />
 21: Bowling Score Calculator <br />
+09: Tic-Tac-Toe <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -41,7 +42,6 @@ README.md file could be better. Work in progress
 04: Brainfuck Interpreter <br />
 05: Chat Client & Server <br />
 06: IRC Bot <br />
-09: Tic-Tac-Toe <br />
 10: Bubble Sort <br />
 11: Blackjack <br />
 12: Connect Four <br />
