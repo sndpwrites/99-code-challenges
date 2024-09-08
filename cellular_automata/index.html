@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1D Cellular Automata (Rule 30)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>1D Cellular Automata</h1>
+    <canvas id="automataCanvas" width="800" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('automataCanvas');
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+        const cellSize = 2;
+        const rows = height / cellSize;
+        const cols = width / cellSize;
+
+        let currentGen = new Array(cols).fill(0);
+        currentGen[Math.floor(cols / 2)] = 1;
+
+        function nextGeneration(current) {
+            const next = new Array(cols).fill(0);
+            for (let i = 0; i < cols; i++) {
+                const left = current[(i - 1 + cols) % cols];
+                const center = current[i];
+                const right = current[(i + 1) % cols];
+                next[i] = applyRule30(left, center, right);
+            }
+            return next;
+        }
+
+        function applyRule30(left, center, right) {
+            const pattern = (left << 2) | (center << 1) | right;
+            return (30 >> pattern) & 1;
+        }
+
+        function drawGeneration(gen, row) {
+            for (let i = 0; i < cols; i++) {
+                if (gen[i] === 1) {
+                    ctx.fillRect(i * cellSize, row * cellSize, cellSize, cellSize);
+                }
+            }
+        }
+
+        function run() {
+            ctx.fillStyle = 'black';
+            for (let i = 0; i < rows; i++) {
+                drawGeneration(currentGen, i);
+                currentGen = nextGeneration(currentGen);
+            }
+        }
+
+        run();
+    </script>
+</body>
+</html>
