@@ -34,6 +34,7 @@ README.md file could be better. Work in progress
 21: Bowling Score Calculator <br />
 09: Tic-Tac-Toe <br />
 70: CIDR Range Calculator <br />
+33: Supermarket Line Simulator <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -57,7 +58,7 @@ README.md file could be better. Work in progress
 27: Markov Chain Text Generator <br />
 28: 1D Cellular Automata <br />
 32: Image Noise Remover <br />
-33: Supermarket Line Simulator <br />
+
 34: Monty Hall Simulation <br />
 35: 0-1 Knapsack Problem <br />
 38: Bookmark Manager <br />
