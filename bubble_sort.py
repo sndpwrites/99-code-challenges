@@ -1,6 +1,8 @@
+import time
+
 def bubble_sort(arr):
     """
-    Sorts a list of numbers using the Bubble Sort algorithm.
+    Sorts a list of numbers using the Bubble Sort algorithm and tracks the time taken.
 
     Args:
         arr: The list of numbers to be sorted.
@@ -8,6 +10,8 @@ def bubble_sort(arr):
     Returns:
         The sorted list.
     """
+    start_time = time.time() # Record the start time
+
     n = len(arr)
     # Traverse through all array elements
     for i in range(n):
@@ -25,6 +29,11 @@ def bubble_sort(arr):
         # If no two elements were swapped by inner loop, then break
         if not swapped:
             break
+
+    end_time = time.time() # Record the end time
+    elapsed_time = end_time - start_time # Calculate the elapsed time
+    print(f"Time taken to sort: {elapsed_time:.6f} seconds") # Print the elapsed time
+
     return arr
 
 # Example usage:
@@ -33,19 +42,19 @@ if __name__ == "__main__":
     print(f"Original list: {my_list}")
 
     sorted_list = bubble_sort(my_list)
-    print(f"Sorted list: {sorted_list}")
+    print(f"Sorted list: {sorted_list}\n")
 
     my_list_2 = [5, 1, 4, 2, 8]
     print(f"Original list: {my_list_2}")
     sorted_list_2 = bubble_sort(my_list_2)
-    print(f"Sorted list: {sorted_list_2}")
+    print(f"Sorted list: {sorted_list_2}\n")
 
     my_list_3 = []
     print(f"Original list: {my_list_3}")
     sorted_list_3 = bubble_sort(my_list_3)
-    print(f"Sorted list: {sorted_list_3}")
+    print(f"Sorted list: {sorted_list_3}\n")
 
     my_list_4 = [7]
     print(f"Original list: {my_list_4}")
     sorted_list_4 = bubble_sort(my_list_4)
-    print(f"Sorted list: {sorted_list_4}")
+    print(f"Sorted list: {sorted_list_4}\n")
