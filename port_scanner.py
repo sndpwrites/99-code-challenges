@@ -114,3 +114,20 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     main(args.target, args.ports)
+
+# Example usage:
+# python port_scanner.py -t example.com -p 1-1000
+# python port_scanner.py -t 127.0.0.1 -p 6800
+
+# Output:
+# [INFO] Scanning target: 127.0.0.1 (127.0.0.1)
+# [INFO] Time started: 2025-05-23 13:50:40
+# --------------------------------------------------
+# [+] Port 135   is open
+# [+] Port 445   is open
+# [+] Port 902   is open
+# [+] Port 912   is open
+# --------------------------------------------------
+# [INFO] Scanning Completed.
+# [INFO] Time finished: 2025-05-23 13:50:45
+# [INFO] Duration: 5.62 seconds.
