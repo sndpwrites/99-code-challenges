@@ -1,4 +1,20 @@
 import time
+import random
+
+def generate_random_list(size, min_val, max_val):
+    """
+    Generates a list of random integers.
+
+    Args:
+        size: The number of elements in the list.
+        min_val: The minimum possible value for an element.
+        max_val: The maximum possible value for an element.
+
+    Returns:
+        A list of random integers.
+    """
+    return [random.randint(min_val, max_val) for _ in range(size)]
+
 
 def bubble_sort(arr):
     """
@@ -36,25 +52,40 @@ def bubble_sort(arr):
 
     return arr
 
-# Example usage:
+
 if __name__ == "__main__":
     my_list = [64, 34, 25, 12, 22, 11, 90]
     print(f"Original list: {my_list}")
-
     sorted_list = bubble_sort(my_list)
     print(f"Sorted list: {sorted_list}\n")
 
-    my_list_2 = [5, 1, 4, 2, 8]
-    print(f"Original list: {my_list_2}")
-    sorted_list_2 = bubble_sort(my_list_2)
-    print(f"Sorted list: {sorted_list_2}\n")
+    #Test 1
+    print("--- Testing with randomly generated lists ---")
+    random_list_size = 1000
+    random_min_val = 1
+    random_max_val = 10000
+    random_numbers = generate_random_list(random_list_size, random_min_val, random_max_val)
+    print(f"Generated a random list of size {random_list_size}. (Displaying first 10 elements): {random_numbers[:10]}...")
 
-    my_list_3 = []
-    print(f"Original list: {my_list_3}")
-    sorted_list_3 = bubble_sort(my_list_3)
-    print(f"Sorted list: {sorted_list_3}\n")
+    sorted_random_list = bubble_sort(random_numbers)
+    print(f"Sorted random list. (Displaying first 10 elements): {sorted_random_list[:10]}...")
 
-    my_list_4 = [7]
-    print(f"Original list: {my_list_4}")
-    sorted_list_4 = bubble_sort(my_list_4)
-    print(f"Sorted list: {sorted_list_4}\n")
+    #Test 2
+    random_list_size = 10000
+    random_min_val = 1
+    random_max_val = 10000
+    random_numbers = generate_random_list(random_list_size, random_min_val, random_max_val)
+    print(f"Generated a random list of size {random_list_size}. (Displaying first 10 elements): {random_numbers[:10]}...")
+
+    sorted_random_list = bubble_sort(random_numbers)
+    print(f"Sorted random list. (Displaying first 10 elements): {sorted_random_list[:10]}...")
+
+    #Test 3
+    random_list_size = 100000
+    random_min_val = 1
+    random_max_val = 10000
+    random_numbers = generate_random_list(random_list_size, random_min_val, random_max_val)
+    print(f"Generated a random list of size {random_list_size}. (Displaying first 10 elements): {random_numbers[:10]}...")
+
+    sorted_random_list = bubble_sort(random_numbers)
+    print(f"Sorted random list. (Displaying first 10 elements): {sorted_random_list[:10]}...")
