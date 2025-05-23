@@ -36,6 +36,7 @@ README.md file could be better. Work in progress
 70: CIDR Range Calculator <br />
 33: Supermarket Line Simulator <br />
 10: Bubble Sort <br />
+41: Port Scanner <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -63,7 +64,6 @@ README.md file could be better. Work in progress
 38: Bookmark Manager <br />
 39: Contact Manager <br />
 40: Basic Markdown to HTML <br />
-41: Port Scanner <br />
 43: Unicode Symbol Picker <br />
 44: Regex Visualizer <br />
 45: Morse Code Translator <br />
