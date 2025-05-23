@@ -35,6 +35,7 @@ README.md file could be better. Work in progress
 09: Tic-Tac-Toe <br />
 70: CIDR Range Calculator <br />
 33: Supermarket Line Simulator <br />
+10: Bubble Sort <br />
 <br />
 
 #### <b>REMAINING</b>
@@ -44,7 +45,6 @@ README.md file could be better. Work in progress
 04: Brainfuck Interpreter <br />
 05: Chat Client & Server <br />
 06: IRC Bot <br />
-10: Bubble Sort <br />
 11: Blackjack <br />
 12: Connect Four <br />
 17: Fantasy Name Generator <br />
@@ -58,7 +58,6 @@ README.md file could be better. Work in progress
 27: Markov Chain Text Generator <br />
 28: 1D Cellular Automata <br />
 32: Image Noise Remover <br />
-
 34: Monty Hall Simulation <br />
 35: 0-1 Knapsack Problem <br />
 38: Bookmark Manager <br />
